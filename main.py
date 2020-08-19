@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-f = open("naver_news.csv", "w", encoding='UTF-8')
+f = open("naver_news.csv", "w", encoding='UTF-8-sig') #encoding='UTF-8-sig' : 맥북 엑셀 한글깨짐 오류 해결
 f.write("언론사, 뉴스 제목\n") #분류
 
 for n in range(1, 21, 10):
